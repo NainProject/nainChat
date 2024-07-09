@@ -6,7 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-BROKER_URL = "localhost"
+BROKER_URL = "broker"  # Docker Compose 서비스 이름 사용
 BROKER_PORT = 1883
 
 mqtt_client = mqtt.Client()
